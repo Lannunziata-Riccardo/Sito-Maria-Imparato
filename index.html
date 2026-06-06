@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maria Imparato – Nutrizionista specializzata in alimentazione per bambini, adolescenti e adulti. Studi a Calerno, Sant'Ilario d'Enza e Parma." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.mariaimparato.it/" />
+  <title>Maria Imparato – Nutrizionista | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Maria Imparato – Nutrizionista",
+    "description": "Nutrizionista specializzata in alimentazione per bambini, adolescenti e adulti",
+    "url": "https://www.mariaimparato.it",
+    "email": "info@mariaimparato.it",
+    "address": [
+      {"@type":"PostalAddress","addressLocality":"Calerno","addressCountry":"IT"},
+      {"@type":"PostalAddress","addressLocality":"Sant'Ilario d'Enza","addressCountry":"IT"},
+      {"@type":"PostalAddress","addressLocality":"Parma","addressCountry":"IT"}
+    ],
+    "sameAs": [
+      "https://www.instagram.com/mariaimparato",
+      "https://www.facebook.com/mariaimparato",
+      "https://www.linkedin.com/in/mariaimparato"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav role="navigation" aria-label="Navigazione principale">
+    <a href="index.html" class="nav-logo" aria-label="Maria Imparato home">Maria <span>Imparato</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="come-lavoro.html">Come lavoro</a></li>
+      <li class="dropdown">
+        <button class="nav-btn dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+          I miei piani
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="dropdown-menu" role="menu">
+          <a href="piano-bambini.html" role="menuitem">Bambini e adolescenti</a>
+          <a href="piano-adulti.html" role="menuitem">Adulti</a>
+        </div>
+      </li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contattami.html" class="btn btn-primary">Contattami</a>
+    </div>
+    <button class="nav-mobile-toggle" id="nav-toggle" aria-label="Apri menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><line x1="2" y1="6" x2="20" y2="6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2" y1="11" x2="20" y2="11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="2" y1="16" x2="20" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </nav>
+</header>
+
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+  <button class="mobile-menu-close" id="mobile-close" aria-label="Chiudi menu">✕</button>
+  <a href="index.html">Home</a>
+  <a href="come-lavoro.html">Come lavoro</a>
+  <a href="piano-bambini.html" class="mobile-sub">↳ Bambini e adolescenti</a>
+  <a href="piano-adulti.html" class="mobile-sub">↳ Adulti</a>
+  <a href="newsletter.html">Newsletter</a>
+  <a href="contattami.html" style="color:var(--green);font-weight:500;">Contattami</a>
+</nav>
+
+<main id="main-content">
+
+  <!-- ── HERO ── -->
+  <section class="hero" aria-label="Sezione principale">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="tag anim-up">Nutrizionista certificata · Biologa</p>
+        <h1 class="hero-title anim-up anim-d1">
+          Il mio obiettivo è aiutarti a raggiungere una <em>salute ottimale</em>.
+        </h1>
+        <p class="hero-sub anim-up anim-d2">
+          Il mio approccio combina scienza e ascolto delle esigenze individuali, personalizzando i piani alimentari per ogni persona.
+        </p>
+        <div class="hero-badge anim-up anim-d3">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <a href="#recensioni" class="hero-badge-link">300 clienti soddisfatti — leggi le recensioni</a>
+        </div>
+        <div class="hero-actions anim-up anim-d3">
+          <a href="contattami.html" class="btn btn-primary">Prenota una visita</a>
+          <a href="come-lavoro.html" class="btn btn-outline">Come lavoro</a>
+        </div>
+      </div>
+      <div class="hero-visual anim-up anim-d2">
+        <div class="hero-card" aria-hidden="true">
+          <svg viewBox="0 0 420 480" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" role="img" aria-label="Illustrazione nutrizione sana">
+            <ellipse cx="210" cy="380" rx="160" ry="40" fill="#396730" opacity="0.07"/>
+            <circle cx="340" cy="80" r="60" fill="#fff4de" opacity="0.6"/>
+            <circle cx="80" cy="120" r="40" fill="#eaf2e7" opacity="0.8"/>
+            <path d="M80 270 Q80 370 210 370 Q340 370 340 270" fill="#fff4de" stroke="#396730" stroke-width="3"/>
+            <ellipse cx="210" cy="270" rx="130" ry="28" fill="#fdf5f5" stroke="#396730" stroke-width="2"/>
+            <circle cx="170" cy="255" r="22" fill="#4d8a40" opacity="0.85"/>
+            <circle cx="210" cy="248" r="28" fill="#396730" opacity="0.75"/>
+            <circle cx="250" cy="255" r="22" fill="#5a9e51" opacity="0.85"/>
+            <ellipse cx="210" cy="248" rx="16" ry="12" fill="#fff4de" opacity="0.25"/>
+            <line x1="210" y1="120" x2="210" y2="248" stroke="#396730" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+            <path d="M210 120 C196 95 158 100 158 130 C158 155 196 150 210 120Z" fill="#396730" opacity="0.65"/>
+            <path d="M210 120 C224 95 262 100 262 130 C262 155 224 150 210 120Z" fill="#4d8a40" opacity="0.75"/>
+            <circle cx="100" cy="190" r="7" fill="#396730" opacity="0.15"/>
+            <circle cx="320" cy="160" r="10" fill="#396730" opacity="0.1"/>
+            <circle cx="355" cy="310" r="8" fill="#396730" opacity="0.1"/>
+          </svg>
+        </div>
+        <div class="floating-badge" aria-hidden="true">
+          <strong>300+</strong>
+          <span>Clienti soddisfatti</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SEDI ── -->
+  <aside class="sedi-row" aria-label="Dove trovare Maria Imparato">
+    <div class="container sedi-inner">
+      <p class="sedi-label">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Dove mi puoi trovare
+      </p>
+      <div class="sedi-list">
+        <span class="sede-item">Calerno</span>
+        <span class="sede-sep" aria-hidden="true">·</span>
+        <span class="sede-item">Sant'Ilario d'Enza</span>
+        <span class="sede-sep" aria-hidden="true">·</span>
+        <span class="sede-item">Parma</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ── I MIEI STUDI ── -->
+  <section class="section bg-beige" aria-labelledby="studi-title">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="tag">Chi sono</p>
+        <h2 id="studi-title">I miei <em>studi</em>.</h2>
+      </div>
+      <div class="studi-grid">
+        <article class="studio-card reveal">
+          <div class="studio-icon" aria-hidden="true">🎓</div>
+          <p>Sono laureata in <strong>Scienze Biologiche</strong>, con una solida formazione accademica che mi ha fornito le basi scientifiche per comprendere a fondo il funzionamento del corpo umano.</p>
+        </article>
+        <article class="studio-card reveal" style="transition-delay:0.1s">
+          <div class="studio-icon" aria-hidden="true">📚</div>
+          <p>Dopo cinque anni di studi intensivi, ho proseguito il mio percorso con <strong>corsi di perfezionamento annuali</strong> specializzati in nutrizione, benessere, educazione alimentare e sport.</p>
+        </article>
+        <article class="studio-card reveal" style="transition-delay:0.2s">
+          <div class="studio-icon" aria-hidden="true">🏅</div>
+          <p>Questi studi avanzati mi hanno permesso di acquisire <strong>competenze specifiche</strong> per supportare al meglio i miei pazienti nel raggiungimento di uno stile di vita sano ed equilibrato.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BAMBINI E ADOLESCENTI ── -->
+  <section class="section" aria-labelledby="bambini-home-title">
+    <div class="container content-split-home">
+      <div class="csh-text reveal">
+        <p class="tag">Bambini e adolescenti</p>
+        <h2 id="bambini-home-title">Educare al cibo fin da <em>piccoli</em>.</h2>
+        <p>Lavorando con bambini e adolescenti, ho capito quanto sia importante l'educazione alimentare fin dalla giovane età.</p>
+        <p>Ho visto come una corretta alimentazione influenzi non solo la crescita fisica, ma anche lo sviluppo emotivo e mentale dei più piccoli.</p>
+        <p>Da questa consapevolezza è nato il mio desiderio di aiutare le famiglie a costruire abitudini alimentari sane che accompagnino i ragazzi per tutta la vita.</p>
+        <a href="piano-bambini.html" class="btn btn-primary" style="margin-top:1.5rem;">Scopri il piano</a>
+      </div>
+      <div class="csh-visual reveal" aria-hidden="true">
+        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" width="220" height="220" role="img" aria-label="Illustrazione bambini e alimentazione">
+          <circle cx="150" cy="150" r="130" fill="#eaf2e7"/>
+          <circle cx="150" cy="110" r="45" fill="#396730" opacity="0.7"/>
+          <circle cx="120" cy="130" r="35" fill="#4d8a40" opacity="0.8"/>
+          <circle cx="180" cy="130" r="35" fill="#5a9e51" opacity="0.8"/>
+          <path d="M150 65 C140 45 115 50 115 72 C115 90 140 85 150 65Z" fill="#396730"/>
+          <path d="M150 65 C160 45 185 50 185 72 C185 90 160 85 150 65Z" fill="#4d8a40" opacity="0.9"/>
+          <line x1="150" y1="65" x2="150" y2="110" stroke="#396730" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="90" cy="90" r="4" fill="#fff4de"/>
+          <circle cx="210" cy="95" r="3" fill="#fff4de"/>
+          <circle cx="80" cy="180" r="5" fill="#fff4de" opacity="0.7"/>
+          <circle cx="225" cy="175" r="4" fill="#fff4de" opacity="0.7"/>
+          <!-- Stars for kids -->
+          <text x="100" y="200" font-size="22" opacity="0.4">⭐</text>
+          <text x="180" y="210" font-size="16" opacity="0.3">✨</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PASSIONE PER L'ALIMENTAZIONE ── -->
+  <section class="section bg-beige" aria-labelledby="passione-title">
+    <div class="container">
+      <div class="section-heading reveal">
+        <p class="tag">La mia storia</p>
+        <h2 id="passione-title">La mia passione per <em>l'alimentazione</em>.</h2>
+      </div>
+      <div class="passione-grid">
+        <div class="passione-col">
+          <article class="passione-card reveal">
+            <p>La mia passione per l'alimentazione e il benessere mi ha spinto a intraprendere un percorso professionale nella nutrizione. Sin da giovane, sono stata affascinata dall'influenza del cibo su corpo e mente.</p>
+          </article>
+          <article class="passione-card reveal" style="transition-delay:0.1s">
+            <p>Vedere i benefici di una corretta alimentazione mi ha ispirata a trasformare questa passione in una carriera. Dopo aver studiato Scienze Biologiche, ho iniziato a lavorare con persone di ogni età.</p>
+          </article>
+        </div>
+        <img src="image/img 1.jpg" alt="Maria Imparato" style="border-radius: var(--radius-lg); ">
+        <img src="image/img 3.jpg" alt="Maria Imparato" style="border-radius: var(--radius-lg); ">
+        <div class="passione-col">
+          <article class="passione-card reveal" style="transition-delay:0.1s">
+            <p>Ho aiutato persone di ogni età a scoprire il potere trasformativo del cibo. Credo che la nutrizione sia una forma d'amore verso se stessi e gli altri.</p>
+          </article>
+          <article class="passione-card reveal" style="transition-delay:0.2s">
+            <p>Mi impegno a educare i genitori su un'alimentazione consapevole e amorevole per i loro figli, perché le abitudini si costruiscono insieme, in famiglia.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── I PROGRAMMI ── -->
+  <section class="section" aria-labelledby="programmi-title">
+    <div class="container programmi-wrap">
+      <div class="section-heading reveal" style="text-align:center; max-width:580px; margin:0 auto 3rem;">
+        <p class="tag">I percorsi</p>
+        <h2 id="programmi-title">I programmi per i <em>miei clienti</em>.</h2>
+        <p>Offro programmi di assistenza personalizzati, così da aiutare ogni persona in base alle proprie esigenze.</p>
+      </div>
+      <div class="programmi-grid">
+        <article class="programma-card reveal">
+          <div class="programma-icon" aria-hidden="true">🌱</div>
+          <h3>Bambini e adolescenti</h3>
+          <p>Un percorso in tre incontri che coinvolge tutta la famiglia, dall'ascolto dei genitori al piano alimentare personalizzato.</p>
+          <a href="piano-bambini.html" class="btn btn-primary">Scopri il programma</a>
+        </article>
+        <article class="programma-card programma-featured reveal" style="transition-delay:0.15s">
+          <div class="programma-icon" aria-hidden="true">🍃</div>
+          <h3>Adulti</h3>
+          <p>Tre incontri dedicati a valutazione, monitoraggio e mantenimento, con supporto continuo via WhatsApp tra una sessione e l'altra.</p>
+          <a href="piano-adulti.html" class="btn btn-beige">Scopri il programma</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RECENSIONI ── -->
+  <section class="section bg-beige" id="recensioni" aria-labelledby="rec-title">
+    <div class="container">
+      <div class="section-heading reveal" style="text-align:center; max-width:500px; margin:0 auto 3rem;">
+        <p class="tag">Recensioni</p>
+        <h2 id="rec-title">Cosa dicono i <em>miei pazienti</em>.</h2>
+      </div>
+      <div class="recensioni-grid">
+        <article class="recensione-card reveal">
+          <div class="rec-stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote>
+            <p>Maria è una professionista eccezionale. Non solo è incredibilmente preparata e competente, ma anche molto empatica e dolce.</p>
+          </blockquote>
+          <footer class="rec-author">Paziente verificata</footer>
+        </article>
+        <article class="recensione-card reveal" style="transition-delay:0.1s">
+          <div class="rec-stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote>
+            <p>Mi sono sentita subito a mio agio con lei. È sempre attenta alle mie esigenze e ogni settimana si prende il tempo per contattarmi e assicurarsi che il mio percorso stia andando bene.</p>
+          </blockquote>
+          <footer class="rec-author">Paziente verificata</footer>
+        </article>
+        <article class="recensione-card reveal" style="transition-delay:0.2s">
+          <div class="rec-stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote>
+            <p>Non ho mai incontrato una nutrizionista così premurosa e affettuosa. La sua disponibilità è incredibile, e questo mi motiva a fare sempre meglio.</p>
+          </blockquote>
+          <footer class="rec-author">Paziente verificata</footer>
+        </article>
+        <article class="recensione-card reveal" style="transition-delay:0.1s">
+          <div class="rec-stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote>
+            <p>La dottoressa Maria sa unire perfettamente la professionalità con l'empatia, rendendo ogni incontro un momento prezioso. Sto facendo progressi incredibili.</p>
+          </blockquote>
+          <footer class="rec-author">Paziente verificata</footer>
+        </article>
+        <article class="recensione-card reveal" style="transition-delay:0.2s">
+          <div class="rec-stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote>
+            <p>Maria è una persona dolce e premurosa, sempre pronta ad ascoltare. Ogni settimana mi sorprende con una telefonata per sapere come procede il mio percorso.</p>
+          </blockquote>
+          <footer class="rec-author">Paziente verificata</footer>
+        </article>
+        <article class="recensione-card reveal" style="transition-delay:0.3s">
+          <div class="rec-stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote>
+            <p>La consiglio a chiunque cerchi un supporto nutrizionale professionale e umano. Maria dimostra quanto ci tenga veramente ai suoi pazienti.</p>
+          </blockquote>
+          <footer class="rec-author">Paziente verificata</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-band" aria-labelledby="cta-home">
+    <div class="container">
+      <h2 id="cta-home">Pronta a iniziare il tuo percorso?</h2>
+      <p>Un primo colloquio conoscitivo gratuito per capire insieme di cosa hai bisogno.</p>
+      <a href="contattami.html" class="btn btn-beige">Prenota ora</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Maria <span>Imparato</span></div>
+        <div class="footer-tagline">Nutrizionista · Biologa</div>
+      </div>
+      <nav class="footer-links" aria-label="Social e contatti">
+        <a href="mailto:info@mariaimparato.it" aria-label="Invia email">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          info@mariaimparato.it
+        </a>
+        <a href="https://www.instagram.com/mariaimparato" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/mariaimparato" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+        <a href="https://www.linkedin.com/in/mariaimparato" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </nav>
+    </div>
+    <p class="footer-copy">© 2025 Maria Imparato – Nutrizionista. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script defer>
+  document.getElementById('prenota-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const nome = this.querySelector('#pf-nome');
+    if (!nome.value) { nome.focus(); return; }
+    btn.textContent = '✓ Richiesta inviata!';
+    btn.disabled = true;
+    btn.style.opacity = '0.75';
+  });
+</script>
+</body>
+</html>

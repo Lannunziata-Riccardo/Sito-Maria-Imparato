@@ -1,0 +1,152 @@
+/* ── Shared styles: piano-bambini + piano-adulti ──────────── */
+
+/* Content split layout */
+.content-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.content-visual {
+  background: var(--beige);
+  border-radius: var(--radius-lg);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.content-text h2 {
+  font-size: clamp(1.9rem, 2.8vw, 2.6rem);
+  margin-bottom: 1rem;
+}
+.content-text h2 em { font-style: italic; color: var(--green); }
+.content-text p { color: var(--gray); font-size: 0.95rem; margin-bottom: 0.75rem; }
+
+/* Age bands */
+.age-bands { background: var(--green); }
+.age-bands .section-heading h2 em { color: var(--beige); }
+.bands-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+.band {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  color: var(--white);
+  backdrop-filter: blur(4px);
+  transition: transform var(--t) var(--ease);
+}
+.band:hover { transform: translateY(-3px); }
+.band-age {
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.band-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-bottom: 0.9rem;
+}
+.band p { font-size: 0.85rem; line-height: 1.7; opacity: 0.85; }
+
+/* Approach items (adulti) */
+.approaches { max-width: 860px; margin: 0 auto; }
+.approach-item {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.approach-item:last-child { border-bottom: none; }
+.approach-num {
+  font-family: var(--serif);
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: var(--green);
+  opacity: 0.25;
+  line-height: 1;
+  padding-top: 0.25rem;
+}
+.approach-body h3 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.approach-body p { font-size: 0.95rem; color: var(--gray); }
+
+/* Target section (adulti) */
+.target-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.target-visual {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content-split  { grid-template-columns: 1fr; gap: 2.5rem; }
+  .bands-grid     { grid-template-columns: 1fr; }
+  .approach-item  { grid-template-columns: 52px 1fr; gap: 1.25rem; }
+  .approach-num   { font-size: 2.5rem; }
+  .target-split   { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+/* ── Incontri grid ── */
+.incontri-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+.incontro-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 2rem;
+  transition: transform var(--t), box-shadow var(--t);
+  position: relative; overflow: hidden;
+}
+.incontro-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--green); transform: scaleX(0); transform-origin: left;
+  transition: transform var(--t);
+}
+.incontro-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.incontro-card:hover::before { transform: scaleX(1); }
+.incontro-header { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
+.incontro-num {
+  font-family: var(--serif); font-size: 2rem; font-weight: 300;
+  color: var(--green); opacity: 0.35; line-height: 1; flex-shrink: 0;
+}
+.incontro-header h3 { font-family: var(--serif); font-size: 1.25rem; font-weight: 400; padding-top: 0.25rem; }
+.incontro-card > p { font-size: 0.88rem; color: var(--gray); line-height: 1.75; margin-bottom: 1.25rem; }
+.incontro-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.incontro-list li {
+  display: flex; align-items: flex-start; gap: 0.5rem;
+  font-size: 0.82rem; color: var(--gray);
+}
+.incontro-list li::before { content: '→'; color: var(--green); flex-shrink: 0; font-weight: 600; }
+
+@media (max-width: 900px) {
+  .incontri-grid { grid-template-columns: 1fr; }
+}
+
+.pill-lg {
+  background: var(--green-pale); color: var(--green);
+  border-radius: var(--radius-xl); padding: 0.45rem 1.1rem;
+  font-size: 0.85rem; font-weight: 500;
+}
